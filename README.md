@@ -1,4 +1,4 @@
-# Warren - DeFAI Layer
+# Warren
 
 Warren is a Python library that bridges AI agents and DeFi protocols. It offers a unified and secure interface for AI agents to interact with various DeFi protocols while abstracting the complexities of blockchain operations and protocol-specific implementations. This empowers the creation of sophisticated DeFAI agents.
 
