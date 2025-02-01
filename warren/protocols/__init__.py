@@ -2,6 +2,7 @@ from typing import Type, Dict
 from .aave import AaveProtocol
 from .lido import LidoProtocol
 from .lulo import LuloProtocol
+from .uniswap import UniswapProtocol
 
 class UnsupportedProtocolError(Exception):
     pass
@@ -16,7 +17,7 @@ STAKING_PROTOCOLS: Dict[str, Type] = {
 }
 
 DEX_PROTOCOLS: Dict[str, Type] = {
-    # "uniswap": UniswapProtocol,  # Uncomment and define UniswapProtocol if available
+     "uniswap": UniswapProtocol, 
 }
 
 def get_lending_protocol(name: str):
