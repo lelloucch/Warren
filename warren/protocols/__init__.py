@@ -3,6 +3,7 @@ from .aave import AaveProtocol
 from .lido import LidoProtocol
 from .lulo import LuloProtocol
 from .uniswap import UniswapProtocol
+from .compound import CompoundProtocol
 
 class UnsupportedProtocolError(Exception):
     pass
@@ -17,7 +18,8 @@ STAKING_PROTOCOLS: Dict[str, Type] = {
 }
 
 DEX_PROTOCOLS: Dict[str, Type] = {
-     "uniswap": UniswapProtocol, 
+     "uniswap": UniswapProtocol,
+     "compound" : CompoundProtocol 
 }
 
 def get_lending_protocol(name: str):
